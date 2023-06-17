@@ -1,0 +1,153 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 20px;
+}
+.btn:hover{
+    color: black;
+ font-weight: bolder;
+}
+.btn2{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 22px;
+    padding: auto;
+}
+.btn2:hover{
+    color: black;
+ font-weight: bolder;
+}
+.my-1{
+    margin: 5px 0;
+}
+.my-2{
+    margin: 25px 0;
+}
+.text-center{
+    text-align: center;
+}
+header{
+    height: 10vh;
+    background-color:var(--main-bg-color);
+    border: 1px solid green;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+ width: 88px;
+ padding: 0 25px;   
+}
+nav ul{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}  
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+}
+nav ul li a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+ font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 400px;
+    height: 25px;
+    border-radius: 3px;
+    margin: 0px 18px 0px 55px; 
+    padding: 0 20px;
+}
+@keyframes slide1 {
+    0%{
+        transform: translate(-92vw);
+    }
+    100%{
+        transform: translate(92vw);
+    }
+}
+@keyframes slide2 {
+    0%{
+        transform: translate(-92vw);
+    }
+    100%{
+        transform: translate(92vw);
+    }
+}
+img{
+    display:block;
+    margin: auto;
+}
+.slider{
+    margin: 25px;
+    height: 246px;
+    width: 1486px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+.slider a{
+    height: 246px;
+    width: 1486px;
+}
+.img1{
+    transform: translate(-92vw);
+    animation: slide1 6s  6s infinite reverse backwards;
+    width: 1486px;
+}
+.img2{
+    transform: translate(92vw);
+    animation: slide2 6s  6s infinite reverse backwards;
+    width: 1486px;
+}
+.card{
+    width: 92vw;
+    margin: 43px auto;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-items{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card img{
+    max-width: 200px;
+}
+.container{
+    min-height: 75vh
+}
+footer{
+    height: 5vh;
+    background-color: var(--main-bg-color);
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+}
