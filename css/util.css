@@ -83,47 +83,79 @@ nav ul li a:hover{
     margin: 0px 18px 0px 55px; 
     padding: 0 20px;
 }
-@keyframes slide1 {
-    0%{
-        transform: translate(-92vw);
-    }
-    100%{
-        transform: translate(92vw);
-    }
-}
-@keyframes slide2 {
-    0%{
-        transform: translate(-92vw);
-    }
-    100%{
-        transform: translate(92vw);
-    }
-}
 img{
     display:block;
     margin: auto;
 }
-.slider{
-    margin: 25px 25px 0px 25px;
-    height: 246px;
-    width: 1486px;
-    overflow: hidden;
-    display: flex;
-    justify-content: end;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-.slider a{
-    height: 246px;
-    width: 1486px;
+
+.mySlides {
+  display: none;
 }
-.img1{
-    transform: translate(-92vw);
-    animation: slide1 6s  6s infinite reverse backwards;
-    width: 1486px;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.img2{
-    transform: translate(92vw);
-    animation: slide2 6s  6s infinite reverse backwards;
-    width: 1486px;
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: var(--main-bg-color);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 .card{
     width: 92vw;

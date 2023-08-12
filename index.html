@@ -32,13 +32,36 @@
     </header>
     <main>
       <div class="container">
-        <div class="slider">
-          <a href="https://www.flipkart.com/tyy/4io/~cs-txm32ljb5x/pr?sid=tyy,4io&collection-tab-name=realme+11+pro+plus+5G&param=24342"><img class="img1" src="realme.png" alt="Realme Phone"></a>
 
-          <a href="https://www.flipkart.com/travel/flights?param=Travel-DTHPW-airasia1399-FLYFK"><img class="img2" src="pic.jpeg" alt="Flight Booking"></a>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="realme.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="pic.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="pic2.jpeg" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
           <div class="card">
-            <!-- <h3 class="my-2">Best of Electronics</h3> -->
             <a href="https://www.flipkart.com/offers-list/content?screen=dynamic&pk=themeViews%3DDT-OMU-1%3ADealcard~widgetType%3DdealCard~contentType%3Dneo&wid=2.dealCard.OMU"><img src="boe.png" alt=""></a>
 
             <div class="cards"></div>
@@ -307,6 +330,8 @@
         </div>
       </div>
     </main>
+    <script src="js.js"></script>
+    
     <footer class="flex-all-center">
       <p>Copyright &copy; MyCart.com</p>
     </footer>
